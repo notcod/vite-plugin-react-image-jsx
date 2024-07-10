@@ -1,0 +1,30 @@
+{
+  "name": "@notcod/vite-plugin-react-image-jsx",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/vite-plugin-react-image-jsx.umd.cjs",
+  "module": "./dist/vite-plugin-react-image-jsx.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/vite-plugin-react-image-jsx.js",
+    "require": "./dist/vite-plugin-react-image-jsx.umd.cjs"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "tslib": "^2.6.3",
+    "vite-imagetools": "^7.0.4"
+  }
+}
